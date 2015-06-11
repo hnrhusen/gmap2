@@ -1,0 +1,33 @@
+[24-Nov-2014 09:45:35 UTC] PHP Parse error:  syntax error, unexpected '?>' in /home/vnrkumari/public_html/linux/application/modules/inventory/views/inventory_view.php on line 937
+[24-Nov-2014 09:48:18 UTC] PHP Parse error:  syntax error, unexpected '?>' in /home/vnrkumari/public_html/linux/application/modules/inventory/views/inventory_view.php on line 937
+[24-Nov-2014 09:48:24 UTC] PHP Parse error:  syntax error, unexpected '?>' in /home/vnrkumari/public_html/linux/application/modules/inventory/views/inventory_view.php on line 937
+[24-Nov-2014 09:55:32 UTC] PHP Parse error:  syntax error, unexpected '?>' in /home/vnrkumari/public_html/linux/application/modules/inventory/views/inventory_view.php on line 937
+[24-Nov-2014 10:00:24 UTC] PHP Parse error:  syntax error, unexpected 'elseif' (T_ELSEIF) in /home/vnrkumari/public_html/linux/application/modules/inventory/views/inventory_view.php on line 970
+[24-Nov-2014 10:02:34 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/vnrkumari/public_html/linux/application/modules/inventory/views/inventory_view.php on line 972
+[24-Nov-2014 10:03:14 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/vnrkumari/public_html/linux/application/modules/inventory/views/inventory_view.php on line 1003
+[24-Nov-2014 10:06:57 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/vnrkumari/public_html/linux/application/modules/inventory/views/inventory_view.php on line 1003
+[24-Nov-2014 10:07:01 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/vnrkumari/public_html/linux/application/modules/inventory/views/inventory_view.php on line 1003
+[24-Nov-2014 10:08:07 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/vnrkumari/public_html/linux/application/modules/inventory/views/inventory_view.php on line 1001
+[24-Nov-2014 10:08:33 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/vnrkumari/public_html/linux/application/modules/inventory/views/inventory_view.php on line 1003
+[24-Nov-2014 10:10:15 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/vnrkumari/public_html/linux/application/modules/inventory/views/inventory_view.php on line 1003
+[24-Nov-2014 10:14:30 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/vnrkumari/public_html/linux/application/modules/inventory/views/inventory_view.php on line 999
+[24-Nov-2014 12:50:06 UTC] PHP Parse error:  syntax error, unexpected '$good_article' (T_VARIABLE) in /home/vnrkumari/public_html/linux/application/modules/inventory/views/good_article.php on line 21
+[24-Nov-2014 15:53:23 UTC] PHP Parse error:  syntax error, unexpected 'y' (T_STRING), expecting ',' or ';' in /home/vnrkumari/public_html/linux/application/modules/inventory/views/work.php on line 212
+[24-Nov-2014 16:04:48 UTC] PHP Parse error:  syntax error, unexpected '"; ?>' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/vnrkumari/public_html/linux/application/modules/dashboard/views/dashboard_left_menu.php on line 187
+[25-Nov-2014 12:25:21 UTC] PHP Parse error:  syntax error, unexpected '''' (T_CONSTANT_ENCAPSED_STRING), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/vnrkumari/public_html/linux/application/modules/inventory/controllers/inventory.php on line 162
+[25-Nov-2014 14:45:53 UTC] PHP Fatal error:  Call to undefined method Inventory_model::get_all_inventory_work() in /home/vnrkumari/public_html/linux/application/modules/inventory/controllers/inventory.php on line 63
+[25-Nov-2014 14:45:56 UTC] PHP Fatal error:  Call to undefined method Inventory_model::get_all_inventory_location() in /home/vnrkumari/public_html/linux/application/modules/inventory/controllers/inventory.php on line 35
+[26-Nov-2014 09:14:20 UTC] PHP Fatal error:  Cannot redeclare Inventory::get_location_info() in /home/vnrkumari/public_html/linux/application/modules/inventory/controllers/inventory.php on line 112
+[11-Dec-2014 12:36:37 UTC] PHP Fatal error:  Call to a member function referrer() on a non-object in /home/vnrkumari/public_html/linux/application/modules/inventory/controllers/inventory.php on line 365
+[13-Dec-2014 05:11:33 UTC] PHP Fatal error:  Call to a member function delete_inventory() on a non-object in /home/vnrkumari/public_html/linux/application/modules/inventory/controllers/inventory.php on line 381
+[13-Dec-2014 05:11:40 UTC] PHP Fatal error:  Call to a member function delete_inventory() on a non-object in /home/vnrkumari/public_html/linux/application/modules/inventory/controllers/inventory.php on line 381
+[13-Dec-2014 08:27:28 UTC] PHP Fatal error:  Call to a member function delete_inventory() on a non-object in /home/vnrkumari/public_html/linux/application/modules/inventory/controllers/inventory.php on line 381
+[13-Dec-2014 08:27:34 UTC] PHP Fatal error:  Call to a member function delete_inventory() on a non-object in /home/vnrkumari/public_html/linux/application/modules/inventory/controllers/inventory.php on line 381
+[13-Dec-2014 13:44:34 UTC] PHP Fatal error:  Call to a member function delete_inventory() on a non-object in /home/vnrkumari/public_html/linux/application/modules/inventory/controllers/inventory.php on line 381
+[16-Dec-2014 14:23:08 UTC] PHP Fatal error:  Unsupported operand types in /home/vnrkumari/public_html/linux/application/modules/layers/models/layer_model.php on line 101
+[16-Dec-2014 14:25:16 UTC] PHP Fatal error:  Unsupported operand types in /home/vnrkumari/public_html/linux/application/modules/layers/models/layer_model.php on line 101
+[16-Dec-2014 17:27:52 UTC] PHP Fatal error:  Unsupported operand types in /home/vnrkumari/public_html/linux/application/modules/layers/models/layer_model.php on line 101
+[16-Dec-2014 17:29:24 UTC] PHP Fatal error:  Unsupported operand types in /home/vnrkumari/public_html/linux/application/modules/layers/models/layer_model.php on line 101
+[16-Dec-2014 17:29:43 UTC] PHP Fatal error:  Unsupported operand types in /home/vnrkumari/public_html/linux/application/modules/layers/models/layer_model.php on line 101
+[16-Dec-2014 17:34:59 UTC] PHP Fatal error:  Unsupported operand types in /home/vnrkumari/public_html/linux/application/modules/layers/models/layer_model.php on line 101
+[16-Dec-2014 17:38:12 UTC] PHP Fatal error:  Unsupported operand types in /home/vnrkumari/public_html/linux/application/modules/layers/models/layer_model.php on line 101
