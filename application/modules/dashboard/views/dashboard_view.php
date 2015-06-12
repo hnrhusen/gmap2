@@ -496,7 +496,7 @@ $(function() {
                         '<label for="pLat" style="padding-bottom:10px;"><span><?php echo $this->lang->line("label_latitude"); ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><input type="text" name="lat"  value="' + layer_lat + '" maxlength="40" readonly /></label>' +
                         '<label for="pLon" style="padding-bottom:10px;"><span><?php echo $this->lang->line("label_longitude"); ?>&nbsp;&nbsp;&nbsp;</span><input type="text" name="lon"  value="' + layer_lon + '" maxlength="40" readonly /></label>' +
                         '<label for="pName" style="padding-bottom:10px;"><div id="div_debt"><span>Debt&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><input type="text" name="debt" class="save-debt"  maxlength="40" /></div></label>' +
-                        '<label for="pName" style="padding-bottom:10px;"><div id="div_debt"><span>Debt&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><input type="file" id="build_img" name="build_img" value=""></div></label>' +
+                        '<label for="pName" style="padding-bottom:10px;"><span>Image&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><input type="file" id="build_img" name="build_img" value=""></label>' +
                         '<br /><button style="margin-right:10px;" name="save-marker" class="save-marker"><?php echo $this->lang->line("save_location"); ?></button>'
                 '</form>' +
                         '</div></p>';

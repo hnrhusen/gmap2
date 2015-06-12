@@ -11,7 +11,7 @@ $lang['group_menu']="Grupos";
 $lang['inventory_menu'] = 'Inventario';
 $lang['layers_menu'] = 'Capas';
 $lang['roles_menu'] = "Papeles";
-
+$lang['building_menu'] = "Edificios";
 //common
 $lang['back'] = 'Espalda';
 $lang['new_location']="Nueva Ubicación";

@@ -11,6 +11,7 @@ $lang['inventory_menu'] = 'Inventory';
 $lang['building_menu'] = 'Buildings';
 $lang['layers_menu'] = 'Layers';
 $lang['roles_menu'] = "Roles";
+$lang['building_menu'] = "Buildings";
 //common
 $lang['back'] = 'Back';
 // dashboard and location
