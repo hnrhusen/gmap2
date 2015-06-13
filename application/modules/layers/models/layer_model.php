@@ -91,7 +91,8 @@ class Layer_model extends CI_Model {
 			$building_array['buildings']['items'][]= array(
 				$row['name'].'/'.$row['address'],
 				$row['latitude'],
-				$row['langitude']
+				$row['langitude'],
+				$row['debt']
 			);
 		}
 
@@ -105,7 +106,8 @@ class Layer_model extends CI_Model {
 			$building_array2['buildings_debts']['items'][]= array(
 				$row['name'].'/'.$row['address'],
 				$row['latitude'],
-				$row['langitude']
+				$row['langitude'],
+				$row['debt']
 			);
 		}
 		$final_array = $building_array + $building_array2 + $result_array;		

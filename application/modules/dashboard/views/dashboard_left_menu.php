@@ -33,7 +33,7 @@
                 echo '<li class="start">';
             }
             ?>
-            <a href="<?php echo base_url(); ?>dashboard">
+            <a href="<?php echo base_url(); ?>buildings">
                 <i class="fa fa-building-o"></i>
                 <span class="title">
                     <?php echo $this->lang->line("building_menu"); ?>

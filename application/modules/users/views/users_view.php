@@ -88,10 +88,6 @@ License: You must have a valid license purchased only from themeforest(the above
                     <!-- END SAMPLE PORTLET CONFIGURATION MODAL FORM-->
                     <!-- BEGIN STYLE CUSTOMIZER -->
                     <div class="theme-panel hidden-xs hidden-sm">
-                        <!--				<div class="toggler">
-                                                        </div>
-                                                        <div class="toggler-close">
-                                                        </div>-->
                         <div class="theme-options">
                             <div class="theme-option theme-colors clearfix">
                                 <span>
@@ -179,16 +175,7 @@ License: You must have a valid license purchased only from themeforest(the above
 <!--								<i class="fa fa-edit"></i>Editable Table-->
                                         <?php echo $this->lang->line('user_list'); ?>
                                     </div>
-                                    <!--							<div class="tools">
-                                                                                                    <a href="javascript:;" class="collapse">
-                                                                                                    </a>
-                                                                                                    <a href="#portlet-config" data-toggle="modal" class="config">
-                                                                                                    </a>
-                                                                                                    <a href="javascript:;" class="reload">
-                                                                                                    </a>
-                                                                                                    <a href="javascript:;" class="remove">
-                                                                                                    </a>
-                                                                                            </div>-->
+
                                 </div>
                                 <div class="portlet-body">
                                     <div class="table-toolbar">
@@ -199,27 +186,6 @@ License: You must have a valid license purchased only from themeforest(the above
                                             </button>
                                             <!--                                                            </a>-->
                                         </div>
-                                        <!--								<div class="btn-group pull-right">
-                                                                                                                <button class="btn dropdown-toggle" data-toggle="dropdown">Tools <i class="fa fa-angle-down"></i>
-                                                                                                                </button>
-                                                                                                                <ul class="dropdown-menu pull-right">
-                                                                                                                        <li>
-                                                                                                                                <a href="#">
-                                                                                                                                         Print
-                                                                                                                                </a>
-                                                                                                                        </li>
-                                                                                                                        <li>
-                                                                                                                                <a href="#">
-                                                                                                                                         Save as PDF
-                                                                                                                                </a>
-                                                                                                                        </li>
-                                                                                                                        <li>
-                                                                                                                                <a href="#">
-                                                                                                                                         Export to Excel
-                                                                                                                                </a>
-                                                                                                                        </li>
-                                                                                                                </ul>
-                                                                                                        </div>-->
                                     </div>
                                     <div id="users_list">
                                         <?php echo $this->load->view('users/users_list'); ?>
