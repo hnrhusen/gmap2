@@ -25,7 +25,7 @@
                 </span>
             </a>
             </li>
-           <!-- -->
+           <!-- Buildings -->
         <?php
             if ($page == 'buildings') {
                 echo '<li class="start active">';
@@ -33,7 +33,6 @@
                 echo '<li class="start">';
             }
             ?>
-
             <a href="<?php echo base_url(); ?>dashboard">
                 <i class="fa fa-building-o"></i>
                 <span class="title">
