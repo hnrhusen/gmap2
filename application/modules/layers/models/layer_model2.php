@@ -80,7 +80,7 @@ class Layer_model extends CI_Model {
 			
 		$j++;
 		}
-		
+		/*
 		$query = "SELECT * FROM `buildings` WHERE `debt` <= 0 AND (`latitude` <> 0 OR `langitude`<> 0)";
 		unset($result);
 		$result = mysql_query($query);
@@ -92,8 +92,7 @@ class Layer_model extends CI_Model {
 				$row['name'].'/'.$row['address'],
 				$row['latitude'],
 				$row['langitude'],
-				$row['debt'],
-				$row['building_img']
+				$row['debt']
 			);
 		}
 
@@ -108,12 +107,11 @@ class Layer_model extends CI_Model {
 				$row['name'].'/'.$row['address'],
 				$row['latitude'],
 				$row['langitude'],
-				$row['debt'],
-				$row['building_img']
+				$row['debt']
 			);
-		}
-		$final_array = $building_array + $building_array2; //+ $result_array;		
-
+		}*/
+		//$final_array = $building_array + $building_array2 + $result_array;		
+		$final_array + $result_array;
 		header('Content-Type: application/json');
 		$encoded_array = json_encode($final_array);
 		print_r($encoded_array);
@@ -206,38 +204,23 @@ class Layer_model extends CI_Model {
 	}
         
         
-        function update_layer($data,$id)
-
-	{
-            $this->db->update('layers',$data, array('id'=>$id));
-
-//	 $this->db->query("UPDATE layers set
-//
-//						 layer_name			= '".$data['layer_name']."',
-//
-//						 layer_description			= '".$data['layer_description']."'
-//
-//						 where id=".$id."");
-//
-//	
-
+    function update_layer($data,$id){
+        $this->db->update('layers',$data, array('id'=>$id));
 	}
         
-        function update_item($data,$id)
-        {
-             $this->db->query("UPDATE layers_items set
+    function update_item($data,$id){
+         $this->db->query("UPDATE layers_items set
 
-						 item_name			= '".$data['item_name']."',
+					 item_name			= '".$data['item_name']."',
 
-						 item_address			= '".$data['item_address']."',
-                                                     
-                                                 item_latitude			= '".$data['item_latitude']."',
-						 item_longitude                 = '".$data['item_longitude']."'
-                                                where id=".$id."");
+					 item_address			= '".$data['item_address']."',
+                                                 
+                                             item_latitude			= '".$data['item_latitude']."',
+					 item_longitude                 = '".$data['item_longitude']."'
+                                            where id=".$id."");
 
-        }
-        
-        
+    }
+
     public function add_layer_item($data)
 	{
 		$this->db->insert('layers_items', $data);

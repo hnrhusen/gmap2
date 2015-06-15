@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jun 11, 2015 at 10:21 PM
+-- Generation Time: Jun 14, 2015 at 07:51 PM
 -- Server version: 5.5.43-0ubuntu0.14.04.1
 -- PHP Version: 5.5.9-1ubuntu4.9
 
@@ -35,31 +35,92 @@ CREATE TABLE IF NOT EXISTS `buildings` (
   `date_added` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `debt` float NOT NULL,
   `building_img` varchar(1000) DEFAULT NULL,
+  `tipo_contribuyente` varchar(2) NOT NULL,
+  `rif_ci` varchar(200) NOT NULL,
+  `tipo_inmueble` varchar(100) NOT NULL,
+  `tipo_propiedad` varchar(100) NOT NULL,
+  `nivel` varchar(5) NOT NULL,
+  `npiso` int(11) NOT NULL,
+  `unidad` varchar(250) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=31 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=85 ;
 
 --
 -- Dumping data for table `buildings`
 --
 
-INSERT INTO `buildings` (`id`, `name`, `address`, `latitude`, `langitude`, `date_added`, `debt`, `building_img`) VALUES
-(14, 'b1', 'av.', 10.4548, -66.7928, '2015-01-13 15:17:35', 3, ''),
-(15, '0', '0', 0, 0, '2015-06-07 23:11:58', 0, ''),
-(16, 'pepe', '3, Venezuela', 11.0059, -68.5272, '2015-06-07 23:12:24', 0, ''),
-(17, '0', '0', 0, 0, '2015-06-07 23:12:27', 0, ''),
-(18, '0', '0', 0, 0, '2015-06-07 23:18:17', 0, ''),
-(19, '0', '0', 0, 0, '2015-06-07 23:19:58', 0, ''),
-(20, 'ASD', 'Carretera La victoria - Colonia Tovar, Venezuela', 10.3527, -67.2968, '2015-06-09 00:37:11', 36, ''),
-(21, 'casita', 'Carretera Vía La Arenosa, Barrerita, Venezuela', 9.96885, -68.0988, '2015-06-09 00:37:44', 36, ''),
-(22, 'c2', 'Calle Marino, Ocumare del Tuy, Venezuela', 10.0608, -66.687, '2015-06-09 00:39:47', 36, ''),
-(23, 'c4', 'Parcela San Benito, Villa De Cura, Venezuela', 10.0013, -67.5439, '2015-06-09 00:41:38', 0, ''),
-(24, 'nueva', 'Macaira - Buena Vista, Venezuela', 10.0338, -66.2585, '2015-06-09 00:42:16', 0, ''),
-(25, 'ss', 'Pedro Camejo, Venezuela', 10.2825, -68.5272, '2015-06-11 01:07:18', 0, ''),
-(26, 'prueba2', 'Carretera Morón - San Felipe, Urama, Venezuela', 10.4014, -68.3405, '2015-06-11 02:51:19', 0, NULL),
-(27, '2121', 'Avenida Principal Ureros, Venezuela', 10.639, -68.6646, '2015-06-11 02:51:46', 0, NULL),
-(28, 'prueba3', '3, Venezuela', 10.7416, -68.4503, '2015-06-11 02:53:20', 0, NULL),
-(29, 'cccc', 'Calle el Pilar, Venezuela', 10.9628, -68.7909, '2015-06-11 03:11:44', 0, NULL),
-(30, 'asd1', '3, Venezuela', 11.0598, -68.9941, '2015-06-12 00:50:03', 0, NULL);
+INSERT INTO `buildings` (`id`, `name`, `address`, `latitude`, `langitude`, `date_added`, `debt`, `building_img`, `tipo_contribuyente`, `rif_ci`, `tipo_inmueble`, `tipo_propiedad`, `nivel`, `npiso`, `unidad`) VALUES
+(14, 'b1', 'av.', 10.4548, -66.7928, '2015-01-13 15:17:35', 3, './././uploads/buildings/casa2.jpeg', '', '', '', '', '', 0, ''),
+(15, '0', '0', 0, 0, '2015-06-07 23:11:58', 0, './././uploads/buildings/casa2.jpeg', '', '', '', '', '', 0, ''),
+(16, 'pepe', '3, Venezuela', 11.0059, -68.5272, '2015-06-07 23:12:24', 0, './././uploads/buildings/casa2.jpeg', '', '', '', '', '', 0, ''),
+(17, '0', '0', 0, 0, '2015-06-07 23:12:27', 0, './././uploads/buildings/casa2.jpeg', '', '', '', '', '', 0, ''),
+(18, '0', '0', 0, 0, '2015-06-07 23:18:17', 0, './././uploads/buildings/casa2.jpeg', '', '', '', '', '', 0, ''),
+(19, '0', '0', 0, 0, '2015-06-07 23:19:58', 0, './././uploads/buildings/casa2.jpeg', '', '', '', '', '', 0, ''),
+(20, 'ASD', 'Carretera La victoria - Colonia Tovar, Venezuela', 10.3527, -67.2968, '2015-06-09 00:37:11', 36, './././uploads/buildings/casa2.jpeg', '', '', '', '', '', 0, ''),
+(21, 'casita', 'Carretera Vía La Arenosa, Barrerita, Venezuela', 9.96885, -68.0988, '2015-06-09 00:37:44', 36, './././uploads/buildings/casa2.jpeg', '', '', '', '', '', 0, ''),
+(22, 'c2', 'Calle Marino, Ocumare del Tuy, Venezuela', 10.0608, -66.687, '2015-06-09 00:39:47', 36, './././uploads/buildings/casa2.jpeg', '', '', '', '', '', 0, ''),
+(23, 'c4', 'Parcela San Benito, Villa De Cura, Venezuela', 10.0013, -67.5439, '2015-06-09 00:41:38', 0, './././uploads/buildings/casa2.jpeg', '', '', '', '', '', 0, ''),
+(24, 'nueva', 'Macaira - Buena Vista, Venezuela', 10.0338, -66.2585, '2015-06-09 00:42:16', 0, './././uploads/buildings/casa2.jpeg', '', '', '', '', '', 0, ''),
+(25, 'ss', 'Pedro Camejo, Venezuela', 10.2825, -68.5272, '2015-06-11 01:07:18', 0, './././uploads/buildings/casa2.jpeg', '', '', '', '', '', 0, ''),
+(26, 'prueba2', 'Carretera Morón - San Felipe, Urama, Venezuela', 10.4014, -68.3405, '2015-06-11 02:51:19', 0, './././uploads/buildings/casa2.jpeg', '', '', '', '', '', 0, ''),
+(27, '2121', 'Avenida Principal Ureros, Venezuela', 10.639, -68.6646, '2015-06-11 02:51:46', 0, './././uploads/buildings/casa2.jpeg', '', '', '', '', '', 0, ''),
+(28, 'prueba3', '3, Venezuela', 10.7416, -68.4503, '2015-06-11 02:53:20', 0, './././uploads/buildings/casa2.jpeg', '', '', '', '', '', 0, ''),
+(29, 'cccc', 'Calle el Pilar, Venezuela', 10.9628, -68.7909, '2015-06-11 03:11:44', 0, './././uploads/buildings/casa2.jpeg', '', '', '', '', '', 0, ''),
+(30, 'asd1', '3, Venezuela', 11.0598, -68.9941, '2015-06-12 00:50:03', 0, './././uploads/buildings/casa2.jpeg', '', '', '', '', '', 0, ''),
+(31, 'LIDERA C.A', 'UD 304ZONA IND LOS PINOS  MANZ  26', 8.27163, -62.7947, '2015-06-14 23:28:42', 0, './././uploads/buildings/casa2.jpeg', 'J', '317492544', 'INDUSTRIAL', 'HORIZONTAL', 'PB', 0, 'PARCELA 13'),
+(32, 'MERCAPAN S.A', 'UD 304ZONA LOS PINOS MANZ  26', 8.27199, -62.7943, '2015-06-14 23:28:42', 0, './././uploads/buildings/casa2.jpeg', 'J', '310693277', 'INDUSTRIAL', 'HORIZONTAL', 'PB', 0, 'PARCELA 01'),
+(33, 'SUPER AUTOS PUERTO ORDAZ C.A [ SUCURSAL ]', 'UD 304ZONA IND LOS PINOS MANZ  27', 8.2709, -62.7938, '2015-06-14 23:28:43', 0, './././uploads/buildings/casa2.jpeg', 'J', '308536725', 'INDUSTRIAL', 'HORIZONTAL', 'PB', 0, 'PARCELA  19 P\\O'),
+(34, 'F.H TRANSMISIONES S.A', 'UD 304ZONA IND LOS PINOS MANZ  27-14', 8.26942, -62.794, '2015-06-14 23:28:43', 0, './././uploads/buildings/casa2.jpeg', 'J', '003349593', 'INDUSTRIAL', 'HORIZONTAL', 'PB', 0, 'GALPON 02'),
+(35, 'BELLAAUTO C.A', 'UD 304ZONA IND LOS PINOS MANZ 27', 8.27056, -62.7927, '2015-06-14 23:28:43', 0, './././uploads/buildings/casa2.jpeg', 'J', '306893644', 'INDUSTRIAL', 'HORIZONTAL', 'PB', 0, 'PARCELA 05'),
+(36, 'DFE C.A', 'UD 304ZONA IND LOS PINOS MANZ  35', 8.27087, -62.7924, '2015-06-14 23:28:43', 0, './././uploads/buildings/casa2.jpeg', 'J', '309695185', 'INDUSTRIAL', 'HORIZONTAL', 'PB', 0, 'PARCELA  7Y8  GALPON 8'),
+(37, 'IRON STEEL DE GUAYANA   C.A', 'UD 304ZONA IND LOS PINOS MANZ 35', 8.271, -62.7916, '2015-06-14 23:28:43', 0, './././uploads/buildings/casa2.jpeg', 'J', '308148288', 'INDUSTRIAL', 'HORIZONTAL', 'PB', 0, 'PARCELA  05'),
+(38, 'SECADO E INSTALACIONES  DE REFRACTARIOS', 'UD 304ZONA IND LOS PINOS MANZ  36', 8.26815, -62.7949, '2015-06-14 23:28:43', 0, './././uploads/buildings/casa2.jpeg', 'J', '311412760', 'INDUSTRIAL', 'HORIZONTAL', 'PB', 0, 'PARCELA  3'),
+(39, 'ALUMINIO MECANIZADO C.A', 'UD 304ZONA IND LOS PINOS MANZ 25', 8.26775, -62.7953, '2015-06-14 23:28:43', 0, './././uploads/buildings/casa2.jpeg', 'J', '306680470', 'INDUSTRIAL', 'HORIZONTAL', 'PB', 0, 'PARCELA  03'),
+(40, 'ENDURIDE VENEZUELA C.A', 'UD 304ZONA IND LOS PINOS MANZ  25', 8.26799, -62.7958, '2015-06-14 23:28:43', 0, './././uploads/buildings/casa2.jpeg', 'J', '311801782', 'INDUSTRIAL', 'HORIZONTAL', 'PB', 0, 'PARCELA  10  GALPON  04'),
+(41, 'INVERSIONES  CERCRA C.A', 'UD 304ZONA LOS PINOS MANZ  22', 8.26694, -62.7961, '2015-06-14 23:28:43', 0, './././uploads/buildings/casa2.jpeg', 'J', '304790783', 'INDUSTRIAL', 'HORIZONTAL', 'PB', 0, 'PARCELA 13 A GALPON  10-2'),
+(42, 'FRESAS Y TORNOS C.A', 'UD 304ZONA LOS PINOS MANZ   CALLE 07', 8.26842, -62.7961, '2015-06-14 23:28:43', 0, './././uploads/buildings/casa2.jpeg', 'J', '095151344', 'INDUSTRIAL', 'HORIZONTAL', 'PB', 0, 'LOCAL  22-13'),
+(43, 'DISTRIBUIDORA  DE LACTEO LA LLOVIZNA C.A', 'UD 304ZONA LOS PINOS MANZ  22CALLE 06', 8.26882, -62.7971, '2015-06-14 23:28:43', 0, './././uploads/buildings/casa2.jpeg', 'J', '303089895', 'INDUSTRIAL', 'HORIZONTAL', 'PB', 0, 'PARCELA  01'),
+(44, 'LACTEO  LOS PINOS  DEL CARONI C.A', 'UD 304ZONA LOS PINOS MANZ  22 CALLE 6', 8.2689, -62.797, '2015-06-14 23:28:43', 0, './././uploads/buildings/casa2.jpeg', 'J', '299229261', 'INDUSTRIAL', 'HORIZONTAL', 'PB', 0, 'GALPON 02'),
+(45, 'E.S EMPRESA  DE SERVICIO  C.A', 'UD 304ZONA LOS PINOS MANZ 10 CALE 6', 8.269, -62.7982, '2015-06-14 23:28:43', 0, './././uploads/buildings/casa2.jpeg', 'J', '304237596', 'INDUSTRIAL', 'HORIZONTAL', 'PB', 0, 'PARCELA  27'),
+(46, 'ENGINE KTMC.A', 'UD 304ZONA LOS PINOS MANZ  11', 8.26763, -62.7996, '2015-06-14 23:28:43', 0, './././uploads/buildings/casa2.jpeg', 'J', '298179074', 'INDUSTRIAL', 'HORIZONTAL', 'PB', 0, 'CASA NUMERO  16 PO'),
+(47, 'REPRESENTACIONES  ANGOTURA C.A', 'UD 304ZONA LOS PINOS MANZ  11', 8.2674, -62.7991, '2015-06-14 23:28:43', 0, './././uploads/buildings/casa2.jpeg', 'J', '080280580', 'INDUSTRIAL', 'HORIZONTAL', 'PB', 0, 'PARCELA  14 GALPON  1-A'),
+(48, 'CONFLUVENSA S..A', 'UD 304ZONA LOS PINOS MANZ 11NO 14 ENTRANDO POR AUTO LAVADO LOS PINOS ALL', 8.26739, -62.7991, '2015-06-14 23:28:43', 0, './././uploads/buildings/casa2.jpeg', 'J', '296373868', 'INDUSTRIAL', 'HORIZONTAL', 'PB', 0, 'GALPON 1 _B SIN PATENTE'),
+(49, 'PROYECTOS  Y CONSTRUCCIONES  PAYLOADER PADRE & HIJOS C.A', 'UD 304ZONA IND LOS PINOS MANZ 10', 8.26798, -62.797, '2015-06-14 23:28:43', 0, './././uploads/buildings/casa2.jpeg', 'J', '303756603', 'INDUSTRIAL', 'HORIZONTAL', 'PB', 0, 'GALPON  SIN NUMERO'),
+(50, 'CONGELADOS PRIMAVERA C.A', 'UD 304ZONA LOS PINOS MANZ  24', 8.26621, -62.7961, '2015-06-14 23:28:43', 0, './././uploads/buildings/casa2.jpeg', 'J', '315081733', 'INDUSTRIAL', 'HORIZONTAL', 'PB', 0, 'PARCELA  8  GALPON  03'),
+(51, 'ROMILCA', 'UD 304ZONA IND LOS PINOS MANZ  37', 8.2658, -62.7962, '2015-06-14 23:28:43', 0, './././uploads/buildings/casa2.jpeg', 'J', '095090744', 'INDUSTRIAL', 'HORIZONTAL', 'PB', 0, 'GALPON 08'),
+(52, 'ROMIPLAST C,A', 'UD 304ZONA LOS PINOS MANZ  37', 8.26582, -62.7962, '2015-06-14 23:28:43', 0, './././uploads/buildings/casa2.jpeg', 'J', '310068348', 'INDUSTRIAL', 'HORIZONTAL', 'PB', 0, 'PARCELA  08 GALPON  08'),
+(53, 'TRUMARCA TRUCK MACHINERY C.A', 'AV CARACAS EDIFICIO  TRUMACA', 8.26966, -62.7913, '2015-06-14 23:28:43', 245, './././uploads/buildings/casa.jpg', 'J', '316643255', 'INDUSTRIAL', 'HORIZONTAL', 'PB', 0, 'LOCAL  46'),
+(54, 'MB CAMIONES DE GUAYANA C.A', 'UD 304ZONA LOS PINOS  AV CARACAS MANZ  36', 8.27177, -62.7892, '2015-06-14 23:28:43', 246, './././uploads/buildings/casa.jpg', 'J', '314820389', 'INDUSTRIAL', 'HORIZONTAL', 'PB', 0, 'PARCELA  38'),
+(55, 'SUPER  AUTOS CAMIONES PUERTO ORDAZ  C.A', 'UD 304ZONA LOS PINOS', 8.27449, -62.7869, '2015-06-14 23:28:43', 247, './././uploads/buildings/casa.jpg', 'J', '294950566', 'INDUSTRIAL', 'HORIZONTAL', 'PB', 0, 'PARCELA  30-21, A LA 30-28,P.O'),
+(56, 'YUMAGLIS GOURMET  C.A', 'UD 304ZONA LOS PINOS  CC AUTANA', 8.2754, -62.786, '2015-06-14 23:28:44', 248, './././uploads/buildings/casa.jpg', 'J', '296179255', 'COMERCIAL', 'HORIZONTAL', 'PB', 0, 'LOCAL  01'),
+(57, 'PETRO SERVICIOS C.A', 'UD 506 ZONA IND  MATANZAS AVDA  NORTE  SUR 07', 8.26241, -62.8141, '2015-06-14 23:28:44', 249, './././uploads/buildings/casa.jpg', 'J', '315166380', 'INDUSTRIAL', 'HORIZONTAL', 'PB', 0, 'PARCELA  01-03'),
+(58, 'BANCO DEL  SUR C.A [SULCUSAL CARBONORCA]', 'UD 508 ZONA IND  MATANZAS', 8.26582, -62.8186, '2015-06-14 23:28:44', 250, './././uploads/buildings/casa.jpg', 'J', '095039897', 'INDUSTRIAL', 'HORIZONTAL', 'PB', 0, 'AL LADO  DE CARBONORCA'),
+(59, 'CORPORACION  S.P.S C.A', 'ZONA IND MATANZAS  [AL LADO DE PIAMECA]', 8.27525, -62.8073, '2015-06-14 23:28:44', 251, './././uploads/buildings/casa.jpg', 'J', '314777246', 'INDUSTRIAL', 'HORIZONTAL', 'PB', 0, 'SIN NUMERO'),
+(60, 'TALLER INDUSTRIAL METALURGICO ANTONIO, C.A.', 'UD-503 ZONA INDUSTRIAL MATANZAS, CALLE NORTE-SUR,  ESTRE DSD Y HIERRO VE', 8.27573, -62.8008, '2015-06-14 23:28:44', 252, './././uploads/buildings/casa.jpg', 'J', '095003159', 'INDUSTRIAL', 'HORIZONTAL', 'PB', 0, 'SIN NUMERO'),
+(61, 'EL GUSTICO ORIENTAL, C.A.', 'UD-504 ZONA INDUSTRIAL MATANZAS,  AVENIDA FUERZAS ARMADAS', 8.27234, -62.8054, '2015-06-14 23:28:44', 253, './././uploads/buildings/casa.jpg', 'J', '315655845', 'COMERCIAL', 'HORIZONTAL', 'PB', 0, 'LOCAL  S/N ,P/O'),
+(62, 'SERVICAUCHOS BARINAS, C.A.', 'ZONA INDUSTRIAL MATANZAS, CALLE EL PARDILLO', 8.27575, -62.7989, '2015-06-14 23:28:44', 254, './././uploads/buildings/casa.jpg', 'J', '310632782', 'INDUSTRIAL', 'HORIZONTAL', 'PB', 0, 'LOCAL  10'),
+(63, 'SERVICIO TECNICO DIESEL PUERTO ORDAZ, C.A.', 'ZONA INDUSTRIAL MATANZAS, CALLE EL SAMAN', 8.27694, -62.7978, '2015-06-14 23:28:44', 255, './././uploads/buildings/casa.jpg', 'J', '302046750', 'INDUSTRIAL', 'HORIZONTAL', 'PB', 0, 'PARCELA  14'),
+(64, 'TRANSPORTE SANCHEZ POLO DE VENEZUELA, C.A.', 'ZONA INDUSTRIAL MATANZAS,  MANZANA  00', 8.2774, -62.7973, '2015-06-14 23:28:44', 256, './././uploads/buildings/casa.jpg', 'J', '002822309', 'INDUSTRIAL', 'HORIZONTAL', 'PB', 0, 'PARCELA 14'),
+(65, 'VIDRIOS ORINOKIA C.A', 'ZONA INDUSTRIAL MATANZAS,  CALLE  PARDILLO', 8.27816, -62.7966, '2015-06-14 23:28:44', 257, './././uploads/buildings/casa.jpg', 'J', '313197718', 'INDUSTRIAL', 'HORIZONTAL', 'PB', 0, 'GALPON 1'),
+(66, 'EN RUEDAS, C.A', 'ZONA INDUSTRIAL MATANZAS,  CALLE PARDILLO,  PARCELA 17', 8.27863, -62.7962, '2015-06-14 23:28:44', 258, './././uploads/buildings/casa.jpg', 'J', '316928926', 'INDUSTRIAL', 'HORIZONTAL', 'PB', 0, 'GALPON  04'),
+(67, 'COMERCIALIZADORA DE METALES CUYUNI, C.A.', 'ZONA INDUSTRIAL MATANZAS, MANZANA NRO.  06', 8.27915, -62.7977, '2015-06-14 23:28:44', 259, './././uploads/buildings/casa.jpg', 'J', '306419349', 'INDUSTRIAL', 'HORIZONTAL', 'PB', 0, 'GALPON  S/N'),
+(68, 'PDSA INDUSTRIAL [PROBASIN]', 'ZONA IND MATANZAS  CALLE PARDILLO  MANZ  04', 8.28313, -62.7921, '2015-06-14 23:28:44', 261, './././uploads/buildings/casa.jpg', 'J', '295355971', 'INDUSTRIAL', 'HORIZONTAL', 'PB', 0, 'PARCELA  1-2'),
+(69, 'MULTIACERO C.A', 'ZONA IND MATANZAS  ESQ  DE LA CALLE  PARDILLO', 8.28609, -62.7901, '2015-06-14 23:28:44', 262, './././uploads/buildings/casa.jpg', 'J', '305993343', 'INDUSTRIAL', 'HORIZONTAL', 'PB', 0, 'LOCAL  SIN NUMERO'),
+(70, 'TRANSPORTE  CHIRICA C.A', 'UD 508 ZONA IND MATANZAS  CARRERA  EL SAMAN  EDIFICIO  SIMPCA   ZONA IND MATANZAS  MANZ  02', 8.29052, -62.7945, '2015-06-14 23:28:44', 263, './././uploads/buildings/casa.jpg', 'J', '095092097', 'INDUSTRIAL', 'HORIZONTAL', 'PB', 0, 'PARCELA  59'),
+(71, 'TRANSPORTE CHIRICA C.A.', 'UD 502 ZONA IND MATANZAS CALLE EL SAMAN  MANZ  02', 8.29053, -62.7945, '2015-06-14 23:28:44', 264, './././uploads/buildings/casa.jpg', 'J', '080008723', 'INDUSTRIAL', 'HORIZONTAL', 'PB', 0, 'PARCELA  59'),
+(72, 'ASOCIACIÓN  COOPERATIVA CAURA AZUL  R.L', 'ZONA IND MATANZAS  CALLE EL SAMAN  EDIFICIO  MULTISERVICIO', 8.28815, -62.7921, '2015-06-14 23:28:44', 265, './././uploads/buildings/casa.jpg', 'J', '296412065', 'INDUSTRIAL', 'HORIZONTAL', 'PB', 0, 'GALPON  4-A PISO 1 OFICINA  03'),
+(73, 'LEAL HERNANDEZ MARIELA', 'ZONA IND MATANZAS  CALLE EL  PADILLO CON ARBOLEDA', 8.28897, -62.7864, '2015-06-14 23:28:44', 266, './././uploads/buildings/casa.jpg', 'V', '101944669', 'COMERCIAL', 'HORIZONTAL', 'PB', 0, 'KIOSCO SIN NUMERO'),
+(74, 'SEGURIDAD  INDUSTRIAL  FELMAR C.A', 'ZONA IND MATANZAS  CALLE  LA ARBOLEDA MANZ  00', 8.28915, -62.7866, '2015-06-14 23:28:44', 267, './././uploads/buildings/casa.jpg', 'J', '401826423', 'INDUSTRIAL', 'HORIZONTAL', 'PB', 0, 'LOCAL  NUMERO 06'),
+(75, 'INVERSIONES  VALISAEK, C.A', 'ZONA IND MATANZAS  CALLE  ARBOLEDA FRENTE H.WELLS', 8.28909, -62.7872, '2015-06-14 23:28:44', 268, './././uploads/buildings/casa.jpg', 'J', '095195562', 'INDUSTRIAL', 'HORIZONTAL', 'PB', 0, 'PARCELA  26'),
+(76, 'ROLINI CONSTRUCTORS C.A', 'ZONA IND MATANZAS  CALLE ARBOLEDA', 8.28978, -62.7878, '2015-06-14 23:28:44', 269, './././uploads/buildings/casa.jpg', 'J', '304327382', 'INDUSTRIAL', 'HORIZONTAL', 'PB', 0, 'MANZ  00- PARCELA  36'),
+(77, 'VENEZOLANA DE CEMENTOS (SUCURSAL ]', 'ZONA IND MATANZAS  , CALLE ARBOLEDA  MANZ  00', 8.29225, -62.7904, '2015-06-14 23:28:44', 270, './././uploads/buildings/casa.jpg', 'J', '000388393', 'INDUSTRIAL', 'HORIZONTAL', 'PB', 0, 'PARCELA  22'),
+(78, 'GERENPRO, C.A', 'UD 502-00-20 Y 21, ZONA IND MATANZAS  CRRA ARBOLEDA EDIFICIO  GERENPRO', 8.29294, -62.791, '2015-06-14 23:28:45', 271, './././uploads/buildings/casa.jpg', 'J', '309968793', 'INDUSTRIAL', 'HORIZONTAL', 'PB', 0, 'PARCELA  502_00-20 Y502-00-21'),
+(79, 'SOCIEDAD  DE CONSTRUCCIONES  SOMOR C.A', 'zONA IND MATANZAS  C/ARBOLEEDA MANZ  00', 8.29727, -62.7943, '2015-06-14 23:28:45', 272, './././uploads/buildings/casa.jpg', 'J', '095017249', 'INDUSTRIAL', 'HORIZONTAL', 'PB', 0, 'PARCELA  79'),
+(80, 'MAQUIMOR C.A', 'ZONA IND MATANZAS C/ARBOLEEDA  MANZ  00', 8.29729, -62.7943, '2015-06-14 23:28:45', 273, './././uploads/buildings/casa.jpg', 'J', '095060993', 'INDUSTRIAL', 'HORIZONTAL', 'PB', 0, 'PARCELA  79'),
+(81, 'CORPORACION SOMOR MAQUIMOR C.A', 'ZONA IND MATANZAS  CALLE ARBOLEDA MANZ  00', 8.29717, -62.7942, '2015-06-14 23:28:45', 274, './././uploads/buildings/casa.jpg', 'J', '310307830', 'INDUSTRIAL', 'HORIZONTAL', 'PB', 0, 'PARCELA  79'),
+(82, 'PDVSA EMPRESA NACIONAL DE TRANSPORTE  S.A', 'ZONA IND MATANZAS  CALLE  EL EMPARME AVENIDA LIBERTADOR  EDIFICIO  PETROLERO', 8.28456, -62.7909, '2015-06-14 23:28:45', 275, './././uploads/buildings/casa.jpg', 'J', '296633029', 'INDUSTRIAL', 'HORIZONTAL', 'PB', 0, 'PARCELA 061 HASTA LA 065'),
+(83, 'SURAL C.A', 'ZONA IND MATANZAS', 8.26504, -62.819, '2015-06-14 23:28:45', 276, './././uploads/buildings/casa.jpg', 'J', '000946906', 'INDUSTRIAL', 'HORIZONTAL', 'PB', 0, 'PARCELA  506-01-05'),
+(84, 'COOPERATIVA ADMINISTRADORA TEPUY VII, R.L.', 'ZONA IND MATANZAS PARCELA 01 Y 02', 8.26264, -62.8162, '2015-06-14 23:28:45', 277, './././uploads/buildings/casa.jpg', 'J', '297567488', 'INDUSTRIAL', 'HORIZONTAL', 'PB', 0, 'AVDA NORTE SUR FRENTE');
 
 --
 -- Triggers `buildings`
@@ -236,7 +297,7 @@ CREATE TABLE IF NOT EXISTS `layers_items` (
   `item_longitude` float NOT NULL,
   `date_added` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=234 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=262 ;
 
 --
 -- Dumping data for table `layers_items`
@@ -300,7 +361,35 @@ INSERT INTO `layers_items` (`id`, `layer_id`, `item_name`, `item_address`, `item
 (230, 0, '0', '0', 0, 0, '2015-06-12 02:44:18'),
 (231, 0, '0', '0', 0, 0, '2015-06-12 02:49:49'),
 (232, 0, '0', '0', 0, 0, '2015-06-12 02:50:05'),
-(233, 0, '0', '0', 0, 0, '2015-06-12 02:50:21');
+(233, 0, '0', '0', 0, 0, '2015-06-12 02:50:21'),
+(234, 0, '0', '0', 0, 0, '2015-06-14 23:14:07'),
+(235, 0, '0', '0', 0, 0, '2015-06-14 23:16:51'),
+(236, 0, '0', '0', 0, 0, '2015-06-14 23:17:02'),
+(237, 0, '0', '0', 0, 0, '2015-06-14 23:27:57'),
+(238, 0, '0', '0', 0, 0, '2015-06-14 23:28:51'),
+(239, 0, '0', '0', 0, 0, '2015-06-14 23:35:33'),
+(240, 0, '0', '0', 0, 0, '2015-06-14 23:35:56'),
+(241, 0, '0', '0', 0, 0, '2015-06-14 23:36:23'),
+(242, 0, '0', '0', 0, 0, '2015-06-14 23:36:35'),
+(243, 0, '0', '0', 0, 0, '2015-06-14 23:36:54'),
+(244, 0, '0', '0', 0, 0, '2015-06-14 23:37:49'),
+(245, 0, '0', '0', 0, 0, '2015-06-14 23:39:37'),
+(246, 0, '0', '0', 0, 0, '2015-06-14 23:40:49'),
+(247, 0, '0', '0', 0, 0, '2015-06-14 23:41:30'),
+(248, 0, '0', '0', 0, 0, '2015-06-14 23:44:11'),
+(249, 0, '0', '0', 0, 0, '2015-06-14 23:45:23'),
+(250, 0, '0', '0', 0, 0, '2015-06-14 23:47:16'),
+(251, 0, '0', '0', 0, 0, '2015-06-14 23:48:29'),
+(252, 0, '0', '0', 0, 0, '2015-06-14 23:50:25'),
+(253, 0, '0', '0', 0, 0, '2015-06-14 23:54:23'),
+(254, 0, '0', '0', 0, 0, '2015-06-14 23:55:38'),
+(255, 0, '0', '0', 0, 0, '2015-06-15 00:09:19'),
+(256, 0, '0', '0', 0, 0, '2015-06-15 00:11:08'),
+(257, 0, '0', '0', 0, 0, '2015-06-15 00:13:40'),
+(258, 0, '0', '0', 0, 0, '2015-06-15 00:14:33'),
+(259, 0, '0', '0', 0, 0, '2015-06-15 00:15:35'),
+(260, 0, '0', '0', 0, 0, '2015-06-15 00:17:04'),
+(261, 0, '0', '0', 0, 0, '2015-06-15 00:20:58');
 
 --
 -- Triggers `layers_items`

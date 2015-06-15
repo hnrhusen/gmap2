@@ -103,119 +103,6 @@ License: You must have a valid license purchased only from themeforest(the above
             <div class="page-content-wrapper">
                 <div class="page-content">
 
-                    <!--			<div class="row">
-                                                    <div class="col-md-12">
-                                                             BEGIN PAGE TITLE & BREADCRUMB
-                                                            <h3 class="page-title">
-                    <?php echo $this->lang->line("dashboard_menu"); ?> 
-                                                            </h3>
-                                                            
-                                                             END PAGE TITLE & BREADCRUMB
-                                                    </div>
-                                            </div>-->
-                    <!--            <div class="row">
-                                    <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
-                                                            <div class="dashboard-stat" style="background-color:#666">
-                                                                    <div class="visual">
-                                                                            
-                                                                    </div>
-                                                                    <div class="details" style="text-align:center;">
-                                                                            <div class="number">
-                                                                                     5
-                                                                            </div>
-                                                                            <div class="desc">
-                    <?php echo $this->lang->line("table_buildings"); ?> 
-                                                                            </div>
-                                                                    </div>
-                                                                    
-                                                            </div>
-                                                    </div>
-                                
-                                                    <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
-                                                            <div class="dashboard-stat red">
-                                                                    <div class="visual">
-                                                                            
-                                                                    </div>
-                                                                    <div class="details" style="text-align:center;">
-                                                                            <div class="number">
-                                                                                     1349
-                                                                            </div>
-                                                                            <div class="desc">
-                    <?php echo $this->lang->line("table_floor"); ?>
-                                                                            </div>
-                                                                    </div>
-                                                                    
-                                                            </div>
-                                                    </div>
-                                    <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
-                                                            <div class="dashboard-stat blue">
-                                                                    <div class="visual">
-                                                                            
-                                                                    </div>
-                                                                    <div class="details">
-                                                                            <div class="number">
-                                                                                     1349
-                                                                            </div>
-                                                                            <div class="desc">
-                    <?php echo $this->lang->line("table_office"); ?>
-                                                                            </div>
-                                                                    </div>
-                                                                    
-                                                            </div>
-                                                    </div>
-                                                    <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
-                                                            <div class="dashboard-stat green">
-                                                                    <div class="visual">
-                                                                            
-                                                                    </div>
-                                                                    <div class="details">
-                                                                            <div class="number">
-                                                                                     549
-                                                                            </div>
-                                                                            <div class="desc">
-                    <?php echo $this->lang->line("goods"); ?>
-                                                                            </div>
-                                                                    </div>
-                                                                    
-                                                            </div>
-                                                    </div>
-                                                    <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
-                                                            <div class="dashboard-stat purple">
-                                                                    <div class="visual">
-                                                                            
-                                                                    </div>
-                                                                    <div class="details">
-                                                                            <div class="number">
-                                                                                     +89%
-                                                                            </div>
-                                                                            <div class="desc">
-                    <?php echo $this->lang->line("works"); ?>
-                                                                            </div>
-                                                                    </div>
-                                                                    
-                                                            </div>
-                                                    </div>
-                                                    <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
-                                                            <div class="dashboard-stat yellow">
-                                                                    <div class="visual">
-                                                                            
-                                                                    </div>
-                                                                    <div class="details">
-                                                                            <div class="number" style=" text-align:right; margin:0px;">
-                                                                                     12,5M$
-                                                                            </div>
-                                                                            <div class="desc" style=" text-align:right; margin-top:-5px;">
-                    
-                    <?php echo $this->lang->line("building_wo_office"); ?>
-                                                                            </div>
-                                                                    </div>
-                                                                    
-                                                            </div>
-                                                    </div>
-                                            </div>-->
-
-
-
                     <div class="row">
                         <div class="col-md-12" style="padding-left:0px !important;padding-right: 0px !important;">
 
@@ -226,18 +113,12 @@ License: You must have a valid license purchased only from themeforest(the above
                                     </div>
 
                                 </div>
-                                <!--						<div class="portlet-body">
-                                                                                        <div id="gmap_basic" class="gmaps">
-                                                                                        </div>
-                                                                                </div>-->
                                 <div id="google_map"></div>
                             </div>
 
                         </div>
 
                     </div>
-
-
 
                     <!-- END PAGE CONTENT-->
                 </div>
@@ -342,17 +223,17 @@ $(function() {
                 }),
                 // a  div where we will place the buttons
                 ctrl = $('<div/>').css({background: '#fff',
-                    border: '1px solid #818181',
-                    padding: '4px',
-                    'margin-top': '29px',
-                    'margin-right': '-97px',
-                    textAlign: 'center',
-                    opacity: .9,
-                    'overflow-y': 'scroll',
-                    width: '145px',
-                    'box-shadow': '0px 0px 5px #000',
-                    'max-height': '295px'
-                });
+                                        border: '1px solid #818181',
+                                        padding: '4px',
+                                        'margin-top': '29px',
+                                        'margin-right': '-97px',
+                                        textAlign: 'center',
+                                        opacity: .9,
+                                        'overflow-y': 'scroll',
+                                        width: '145px',
+                                        'box-shadow': '0px 0px 5px #000',
+                                        'max-height': '295px'});
+
         //show all-button
         ctrl.append($('<input>', {type: 'button', value: '<?php echo $this->lang->line("show_all"); ?>'})
                 .click(function() {
@@ -400,17 +281,14 @@ $(function() {
                 //of the MVCObject that has been stored as checkbox-data 
                 var str = item[0];
                 var res = str.split('/');
-                if(item[3]<=0)
-                    item[3] = 'Sin deauda'
                 var contentString = $('<div class="marker-info-win">' +
                         '<div class="marker-inner-win"><span class="info-content">' +
                         '<h1 class="marker-heading">' + res[0] + '</h1>' +
-                        '<p class="marker-address">' + 
+                        '<p class="marker-address">'+
                             '<b>Address: </b>' + res[1] + 
                             '<br><b>longitude: </b>' + item[1] + 
                             '<br><b>latitude: </b>' + item[2] + 
                             '<br><b>Debt: </b>' + item[3] + 
-                            '<br><img src="'+ item[4] + '">'+
                         '</p>' +
                         '</div></div>');
                 marker.bindTo('map', cat.data('goo'), 'map');
@@ -426,10 +304,7 @@ $(function() {
         //use the buttons-div as map-control 
         map.controls[google.maps.ControlPosition.TOP_RIGHT].push(ctrl[0]);
 
-
-
         //rightclickjquery
-
         var mapCenter = new google.maps.LatLng(47.6145, -122.3418); //Google map Coordinates
         var map;
 
@@ -450,8 +325,6 @@ $(function() {
                         scaleControl: true, // enable scale control
                         mapTypeId: google.maps.MapTypeId.ROADMAP // google map type
                     };
-
-
 
             //Load Markers from the XML File, Check (map_process.php)
             $.get("<?php echo base_url(); ?>dashboard/add_marker_location", function(data) {
@@ -504,11 +377,10 @@ $(function() {
                         '<label for="pLat" style="padding-bottom:10px;"><span><?php echo $this->lang->line("label_latitude"); ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><input type="text" name="lat"  value="' + layer_lat + '" maxlength="40" readonly /></label>' +
                         '<label for="pLon" style="padding-bottom:10px;"><span><?php echo $this->lang->line("label_longitude"); ?>&nbsp;&nbsp;&nbsp;</span><input type="text" name="lon"  value="' + layer_lon + '" maxlength="40" readonly /></label>' +
                         '<label for="pName" style="padding-bottom:10px;"><div id="div_debt"><span>Debt&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><input type="text" name="debt" class="save-debt"  maxlength="40" /></div></label>' +
-                        '<label for="pName" style="padding-bottom:10px;"><div id="div_debt"><span>Debt&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><input type="file" id="build_img" name="build_img" value=""></div></label>' +
+                        '<label for="pName" style="padding-bottom:10px;"><span>Image&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><input type="file" id="build_img" name="build_img" value=""></label>' +
                         '<br /><button style="margin-right:10px;" name="save-marker" class="save-marker"><?php echo $this->lang->line("save_location"); ?></button>'
                 '</form>' +
                         '</div></p>';
-                //<input type="file" id="layer_icon" name="icon" value="">
                 //Drop a new Marker with our Edit Form
                 create_marker(event.latLng, '<?php echo $this->lang->line("new_location"); ?>', EditForm, true, true, true, "<?php echo base_url(); ?>assets/img/pin_green.png");
             });
@@ -626,7 +498,6 @@ $(function() {
         function save_marker(Marker, mName, mAddress, mLayer, replaceWin)
         {
             //Save new marker using jQuery Ajax
-
             var mLatLang = Marker.getPosition().toUrlValue(); //get marker position
             var myData = {name: mName, address: mAddress, latlang: mLatLang, layer: mLayer}; //post variables
             console.log(replaceWin);
@@ -650,14 +521,7 @@ $(function() {
             });
             return false;
         }
-
-
         //rightclickjquery 
-
-
-
-
-
     });
     jQuery(document).ready(function() {
         App.init();

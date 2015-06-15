@@ -91,7 +91,7 @@ License: You must have a valid license purchased only from themeforest(the above
 													<input type="submit" name="submit" value="Upload CSV file" class="btn btn-primary">
 												</form>
 												<?php 
-												if (isset($error)): ?>
+												/*if (isset($error)): ?>
 												    <div class="alert alert-error"><?php echo $error; ?></div>
 												<?php endif; ?>
 												<?php
@@ -105,7 +105,7 @@ License: You must have a valid license purchased only from themeforest(the above
 														echo "<br><br>";
 													}
 
-												}
+												}*/
 												?>                                               
                                             
                                         </div>
