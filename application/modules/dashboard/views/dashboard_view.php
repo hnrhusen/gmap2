@@ -409,8 +409,11 @@ $(function() {
                             '<b>Address: </b>' + res[1] + 
                             '<br><b>longitude: </b>' + item[1] + 
                             '<br><b>latitude: </b>' + item[2] + 
+                            '<br><b>Contribuyente: </b>' + item[6]+ '-' + item[7] + 
                             '<br><b>Debt: </b>' + item[3] + 
+                            '<br><b>Tipo de Inmueble: </b>' + item[5] + 
                             '<br><img src="'+ item[4] + '">'+
+
                         '</p>' +
                         '</div></div>');
                 marker.bindTo('map', cat.data('goo'), 'map');

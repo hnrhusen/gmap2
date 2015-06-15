@@ -93,7 +93,10 @@ class Layer_model extends CI_Model {
 				$row['latitude'],
 				$row['langitude'],
 				$row['debt'],
-				$row['building_img']
+				$row['building_img'],
+				$row['tipo_inmueble'],
+				$row['tipo_contribuyente'],
+				$row['rif_ci']
 			);
 		}
 
@@ -109,7 +112,10 @@ class Layer_model extends CI_Model {
 				$row['latitude'],
 				$row['langitude'],
 				$row['debt'],
-				$row['building_img']
+				$row['building_img'],
+				$row['tipo_inmueble'],
+				$row['tipo_contribuyente'],
+				$row['rif_ci']
 			);
 		}
 		$final_array = $building_array + $building_array2; //+ $result_array;		
