@@ -47,7 +47,13 @@ class Layer_model extends CI_Model {
 //        }
             
             //lates query
-            
+        if ($this->session->all_userdata('language') != '') {
+            $this->language = $this->session->userdata('language');
+        } else {
+            $this->language = $this->config->item('default_language');
+        }
+        $this->lang->load($this->language,$this->language);
+        
     	$query1="SELECT DISTINCT `layer_id` FROM `layers_items` WHERE 1";
 		$sql1=mysql_query($query1);
 		while($row=mysql_fetch_assoc($sql1)){
@@ -84,7 +90,7 @@ class Layer_model extends CI_Model {
 		$query = "SELECT * FROM `buildings` WHERE `debt` <= 0 AND (`latitude` <> 0 OR `langitude`<> 0)";
 		unset($result);
 		$result = mysql_query($query);
-		$building_array['buildings']['label'] = 'Buildings without Debts';
+		$building_array['buildings']['label'] = $this->lang->line("taxpayer_without_deb");
 		$building_array['buildings']['icon'] = base_url().'assets/img/map_icons/home_blue.png';
 		unset($row);
 		while ($row = mysql_fetch_assoc($result)) {
@@ -103,7 +109,7 @@ class Layer_model extends CI_Model {
 		$query = "SELECT * FROM `buildings` WHERE `debt` > 0 AND (`latitude` <> 0 OR `langitude`<> 0)";
 		unset($result);
 		$result = mysql_query($query);
-		$building_array2['buildings_debts']['label'] = 'Buildings with Debts';
+		$building_array2['buildings_debts']['label'] = $this->lang->line("taxpayer_with_deb");
 		$building_array2['buildings_debts']['icon'] = base_url().'assets/img/map_icons/red-house.png';
 		unset($row);
 		while ($row = mysql_fetch_assoc($result)) {

@@ -72,9 +72,10 @@ $lang['logout']="Finalizar la sesión";
 $lang['label_latitude'] = 'Latitud';
 $lang['label_langitude'] = 'Langitud';
 $lang['label_longitude'] = 'Longitud';
-
-
-
+$lang['label_address'] = 'Dirección';
+$lang['label_taxpayer'] = 'Contribuyente';
+$lang['label_property_type'] = 'Tipo de Inmueble';
+$lang['label_debt'] = 'Deuda';
 
 $lang['job_name']="Nombre del trabajo";
 $lang['engineer_name']="Nombre del Ingeniero";
@@ -227,4 +228,6 @@ $lang['error_datepicker_to'] = "Por favor, Introduzca la fecha final*";
 //inventory log popup error
 $lang['error_file_upload'] = "Por favor elija Archivo*";
 
+$lang['taxpayer_with_deb'] = "Contribuyentes con deuda";
+$lang['taxpayer_without_deb'] = "Contribuyentes sin deuda";
 ?>

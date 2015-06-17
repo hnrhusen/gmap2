@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jun 14, 2015 at 07:51 PM
+-- Generation Time: Jun 16, 2015 at 08:59 PM
 -- Server version: 5.5.43-0ubuntu0.14.04.1
 -- PHP Version: 5.5.9-1ubuntu4.9
 
@@ -58,7 +58,7 @@ INSERT INTO `buildings` (`id`, `name`, `address`, `latitude`, `langitude`, `date
 (19, '0', '0', 0, 0, '2015-06-07 23:19:58', 0, './././uploads/buildings/casa2.jpeg', '', '', '', '', '', 0, ''),
 (20, 'ASD', 'Carretera La victoria - Colonia Tovar, Venezuela', 10.3527, -67.2968, '2015-06-09 00:37:11', 36, './././uploads/buildings/casa2.jpeg', '', '', '', '', '', 0, ''),
 (21, 'casita', 'Carretera Vía La Arenosa, Barrerita, Venezuela', 9.96885, -68.0988, '2015-06-09 00:37:44', 36, './././uploads/buildings/casa2.jpeg', '', '', '', '', '', 0, ''),
-(22, 'c2', 'Calle Marino, Ocumare del Tuy, Venezuela', 10.0608, -66.687, '2015-06-09 00:39:47', 36, './././uploads/buildings/casa2.jpeg', '', '', '', '', '', 0, ''),
+(22, 'c2', 'Calle Marino, Ocumare del Tuy, Venezuela', 10.0608, -66.687, '2015-06-09 00:39:47', 36.954, './././uploads/buildings/casa2.jpeg', '', '', '', '', '', 0, ''),
 (23, 'c4', 'Parcela San Benito, Villa De Cura, Venezuela', 10.0013, -67.5439, '2015-06-09 00:41:38', 0, './././uploads/buildings/casa2.jpeg', '', '', '', '', '', 0, ''),
 (24, 'nueva', 'Macaira - Buena Vista, Venezuela', 10.0338, -66.2585, '2015-06-09 00:42:16', 0, './././uploads/buildings/casa2.jpeg', '', '', '', '', '', 0, ''),
 (25, 'ss', 'Pedro Camejo, Venezuela', 10.2825, -68.5272, '2015-06-11 01:07:18', 0, './././uploads/buildings/casa2.jpeg', '', '', '', '', '', 0, ''),
@@ -297,7 +297,7 @@ CREATE TABLE IF NOT EXISTS `layers_items` (
   `item_longitude` float NOT NULL,
   `date_added` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=262 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=287 ;
 
 --
 -- Dumping data for table `layers_items`
@@ -389,7 +389,32 @@ INSERT INTO `layers_items` (`id`, `layer_id`, `item_name`, `item_address`, `item
 (258, 0, '0', '0', 0, 0, '2015-06-15 00:14:33'),
 (259, 0, '0', '0', 0, 0, '2015-06-15 00:15:35'),
 (260, 0, '0', '0', 0, 0, '2015-06-15 00:17:04'),
-(261, 0, '0', '0', 0, 0, '2015-06-15 00:20:58');
+(261, 0, '0', '0', 0, 0, '2015-06-15 00:20:58'),
+(262, 0, '0', '0', 0, 0, '2015-06-15 00:27:55'),
+(263, 0, '0', '0', 0, 0, '2015-06-15 02:18:33'),
+(264, 0, '0', '0', 0, 0, '2015-06-15 02:19:21'),
+(265, 0, '0', '0', 0, 0, '2015-06-15 02:22:39'),
+(266, 0, '0', '0', 0, 0, '2015-06-15 02:23:15'),
+(267, 0, '0', '0', 0, 0, '2015-06-17 00:27:01'),
+(268, 0, '0', '0', 0, 0, '2015-06-17 00:27:38'),
+(269, 0, '0', '0', 0, 0, '2015-06-17 00:32:40'),
+(270, 0, '0', '0', 0, 0, '2015-06-17 00:35:16'),
+(271, 0, '0', '0', 0, 0, '2015-06-17 00:37:26'),
+(272, 0, '0', '0', 0, 0, '2015-06-17 00:38:01'),
+(273, 0, '0', '0', 0, 0, '2015-06-17 00:44:10'),
+(274, 0, '0', '0', 0, 0, '2015-06-17 00:49:28'),
+(275, 0, '0', '0', 0, 0, '2015-06-17 01:01:20'),
+(276, 0, '0', '0', 0, 0, '2015-06-17 01:03:22'),
+(277, 0, '0', '0', 0, 0, '2015-06-17 01:14:57'),
+(278, 0, '0', '0', 0, 0, '2015-06-17 01:15:20'),
+(279, 0, '0', '0', 0, 0, '2015-06-17 01:15:52'),
+(280, 0, '0', '0', 0, 0, '2015-06-17 01:16:25'),
+(281, 0, '0', '0', 0, 0, '2015-06-17 01:21:00'),
+(282, 0, '0', '0', 0, 0, '2015-06-17 01:21:54'),
+(283, 0, '0', '0', 0, 0, '2015-06-17 01:22:37'),
+(284, 0, '0', '0', 0, 0, '2015-06-17 01:24:07'),
+(285, 0, '0', '0', 0, 0, '2015-06-17 01:25:00'),
+(286, 0, '0', '0', 0, 0, '2015-06-17 01:28:10');
 
 --
 -- Triggers `layers_items`
@@ -487,14 +512,15 @@ CREATE TABLE IF NOT EXISTS `users` (
   `cargo` varchar(55) NOT NULL,
   `date_added` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=18 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=19 ;
 
 --
 -- Dumping data for table `users`
 --
 
 INSERT INTO `users` (`id`, `username`, `password`, `language`, `email`, `group_id`, `cargo`, `date_added`) VALUES
-(17, 'admin', '0192023a7bbd73250516f069df18b500', 'english', 'david@gmailnow.com', 6, 'testnow', '2014-11-07 13:13:10');
+(17, 'admin', '0192023a7bbd73250516f069df18b500', 'english', 'david@gmailnow.com', 6, 'testnow', '2014-11-07 13:13:10'),
+(18, 'victor', 'ffc150a160d37e92012c196b6af4160d', 'spanish', 'asd@asd.com', 9, 'asd', '2015-06-17 01:03:08');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

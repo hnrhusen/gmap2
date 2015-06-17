@@ -401,17 +401,19 @@ $(function() {
                 var str = item[0];
                 var res = str.split('/');
                 if(item[3]<=0)
-                    item[3] = 'Sin deauda'
+                    item[3] = '<font color="green"><b>Sin deuda</b></font>'
+                else
+                    item[3] = '<font color="red"><b>'+ item[3] + '</b></font> Bs.'
                 var contentString = $('<div class="marker-info-win">' +
                         '<div class="marker-inner-win"><span class="info-content">' +
                         '<h1 class="marker-heading">' + res[0] + '</h1>' +
                         '<p class="marker-address">' + 
-                            '<b>Address: </b>' + res[1] + 
-                            '<br><b>longitude: </b>' + item[1] + 
-                            '<br><b>latitude: </b>' + item[2] + 
-                            '<br><b>Contribuyente: </b>' + item[6]+ '-' + item[7] + 
-                            '<br><b>Debt: </b>' + item[3] + 
-                            '<br><b>Tipo de Inmueble: </b>' + item[5] + 
+                            '<b><?php echo $this->lang->line("label_address"); ?>: </b>' + res[1] + 
+                            '<br><b><?php echo $this->lang->line("label_latitude"); ?>: </b>' + item[1] + 
+                            '<br><b><?php echo $this->lang->line("label_longitude"); ?>: </b>' + item[2] + 
+                            '<br><b><?php echo $this->lang->line("label_taxpayer"); ?>: </b>' + item[6]+ '-' + item[7] + 
+                            '<br><b><?php echo $this->lang->line("label_debt"); ?>: </b>' + item[3] +
+                            '<br><b><?php echo $this->lang->line("label_property_type"); ?>: </b>' + item[5] + 
                             '<br><img src="'+ item[4] + '">'+
 
                         '</p>' +

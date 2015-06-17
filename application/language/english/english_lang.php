@@ -85,8 +85,10 @@ $lang['add_office'] = 'Add Office';
 $lang['label_latitude'] = 'Latitude';
 $lang['label_langitude'] = 'Langitude';
 $lang['label_longitude'] = 'Longitude';
-
-
+$lang['label_address'] = 'Address';
+$lang['label_taxpayer'] = 'Taxpayer';
+$lang['label_property_type'] = 'Property Type';
+$lang['label_debt'] = 'Debt';
 
 $lang['home_menu']="Home";
 $lang['Goods']="Goods";
@@ -240,4 +242,7 @@ $lang['error_file_upload'] = "Please Choose File*";
 //dashboard map
 $lang['show_all'] = "Show All";
 $lang['clear_all'] = "Clear All";
+
+$lang['taxpayer_with_deb'] = "Taxpayers with debt";
+$lang['taxpayer_without_deb'] = "taxpayers without debt";
 ?>
