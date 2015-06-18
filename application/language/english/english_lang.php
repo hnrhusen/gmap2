@@ -89,6 +89,10 @@ $lang['label_address'] = 'Address';
 $lang['label_taxpayer'] = 'Taxpayer';
 $lang['label_property_type'] = 'Property Type';
 $lang['label_debt'] = 'Debt';
+$lang['label_good_type'] = 'Good Type';
+$lang['label_nivel'] = 'Level';
+$lang['label_npiso'] = 'Floor Num.';
+$lang['label_unidad'] = 'Unity';
 
 $lang['home_menu']="Home";
 $lang['Goods']="Goods";
@@ -243,6 +247,6 @@ $lang['error_file_upload'] = "Please Choose File*";
 $lang['show_all'] = "Show All";
 $lang['clear_all'] = "Clear All";
 
-$lang['taxpayer_with_deb'] = "Taxpayers with debt";
-$lang['taxpayer_without_deb'] = "taxpayers without debt";
+$lang['taxpayer_with_deb'] = " With debt";
+$lang['taxpayer_without_deb'] = " Without debt";
 ?>

@@ -71,7 +71,7 @@ License: You must have a valid license purchased only from themeforest(the above
             }
             /* Marker Info Window */
             h1.marker-heading{color: #585858;margin: 0px;padding: 0px;font: 18px "Trebuchet MS", Arial;border-bottom: 1px dotted #D8D8D8;}
-            div.marker-info-win {max-width: 300px;margin-right: -20px;}
+            div.marker-info-win {max-width: 350px;margin-right: -20px;}
             div.marker-info-win p{padding: 0px;margin: 10px 0px 10px 0;}
             div.marker-inner-win{padding: 5px;}
         </style>
@@ -341,7 +341,7 @@ $(function() {
                     maxHeight: 350
                 }),
                 // a  div where we will place the buttons
-                ctrl = $('<div/>').css({background: '#fff',
+                ctrl = $('<div/>').css({background: '#FFF',
                     border: '1px solid #818181',
                     padding: '4px',
                     'margin-top': '29px',
@@ -349,9 +349,9 @@ $(function() {
                     textAlign: 'center',
                     opacity: .9,
                     'overflow-y': 'scroll',
-                    width: '145px',
+                    width: '155px',
                     'box-shadow': '0px 0px 5px #000',
-                    'max-height': '295px'
+                    'max-height': '350px'
                 });
         //show all-button
         ctrl.append($('<input>', {type: 'button', value: '<?php echo $this->lang->line("show_all"); ?>'})
@@ -404,7 +404,7 @@ $(function() {
                     item[3] = '<font color="green"><b>Sin deuda</b></font>'
                 else
                     item[3] = '<font color="red"><b>'+ item[3] + '</b></font> Bs.'
-                var contentString = $('<div class="marker-info-win">' +
+                var contentString = $('<div class="marker-info-win" style="width: 450px;overflow-x: hidden;">' +
                         '<div class="marker-inner-win"><span class="info-content">' +
                         '<h1 class="marker-heading">' + res[0] + '</h1>' +
                         '<p class="marker-address">' + 
@@ -414,6 +414,10 @@ $(function() {
                             '<br><b><?php echo $this->lang->line("label_taxpayer"); ?>: </b>' + item[6]+ '-' + item[7] + 
                             '<br><b><?php echo $this->lang->line("label_debt"); ?>: </b>' + item[3] +
                             '<br><b><?php echo $this->lang->line("label_property_type"); ?>: </b>' + item[5] + 
+                            '<br><b><?php echo $this->lang->line("label_good_type"); ?>: </b>' + item[8] +
+                            '<br><b><?php echo $this->lang->line("label_nivel"); ?>: </b>' + item[9] +
+                            '<br><b><?php echo $this->lang->line("label_npiso"); ?>: </b>' + item[10] +
+                            '<br><b><?php echo $this->lang->line("label_unidad"); ?>: </b>' + item[11] +
                             '<br><img src="'+ item[4] + '">'+
 
                         '</p>' +

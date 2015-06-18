@@ -102,7 +102,11 @@ class Layer_model extends CI_Model {
 				$row['building_img'],
 				$row['tipo_inmueble'],
 				$row['tipo_contribuyente'],
-				$row['rif_ci']
+				$row['rif_ci'],
+				$row['tipo_propiedad'],
+				$row['nivel'],
+				$row['npiso'],
+				$row['unidad']
 			);
 		}
 
@@ -121,7 +125,11 @@ class Layer_model extends CI_Model {
 				$row['building_img'],
 				$row['tipo_inmueble'],
 				$row['tipo_contribuyente'],
-				$row['rif_ci']
+				$row['rif_ci'],
+				$row['tipo_propiedad'],
+				$row['nivel'],
+				$row['npiso'],
+				$row['unidad']
 			);
 		}
 		$final_array = $building_array + $building_array2; //+ $result_array;		

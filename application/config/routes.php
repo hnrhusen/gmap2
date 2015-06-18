@@ -38,7 +38,7 @@
 |
 */
 
-$route['default_controller'] = "site/home";
+$route['default_controller'] = "site/home/login";
 $route['404_override'] = '';
 //layer item
 $route['layer/(:any)'] = "layers/layer_items_list";

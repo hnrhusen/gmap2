@@ -1,3 +1,4 @@
+Options All -Indexes
 RewriteEngine on
 RewriteCond $1 !^(index\.php|img|css|js|robots\.txt|favicon\.ico)
 RewriteCond %{REQUEST_FILENAME} !-f

@@ -76,6 +76,10 @@ $lang['label_address'] = 'Dirección';
 $lang['label_taxpayer'] = 'Contribuyente';
 $lang['label_property_type'] = 'Tipo de Inmueble';
 $lang['label_debt'] = 'Deuda';
+$lang['label_good_type'] = 'Tipo de propiedad';
+$lang['label_nivel'] = 'Nivel';
+$lang['label_npiso'] = 'Nro. Piso';
+$lang['label_unidad'] = 'Unidad';
 
 $lang['job_name']="Nombre del trabajo";
 $lang['engineer_name']="Nombre del Ingeniero";
@@ -228,6 +232,6 @@ $lang['error_datepicker_to'] = "Por favor, Introduzca la fecha final*";
 //inventory log popup error
 $lang['error_file_upload'] = "Por favor elija Archivo*";
 
-$lang['taxpayer_with_deb'] = "Contribuyentes con deuda";
-$lang['taxpayer_without_deb'] = "Contribuyentes sin deuda";
+$lang['taxpayer_with_deb'] = " Con deuda";
+$lang['taxpayer_without_deb'] = " Sin deuda";
 ?>
